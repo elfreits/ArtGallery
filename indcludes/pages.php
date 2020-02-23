@@ -3,7 +3,7 @@
         if($_GET['page']=="main"){
             include 'main.php';
         }
-        else if($_GET['page']=="images"){
+        else if($_GET['page']=="art"){
             include 'images.php';
         }
         else{

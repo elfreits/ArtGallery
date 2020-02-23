@@ -6,8 +6,8 @@
                 <div class="logo-text-website">art gallery</div>
             </div>
             <div id="nav-website">
-                <div class="button-nav-website"><a href="?page=main">główna</a></div>
-                <div class="button-nav-website"><a href="?page=images">obrazy</a></div>
+                <div class="button-nav-website"><a href="main">główna</a></div>
+                <div class="button-nav-website"><a href="art">obrazy</a></div>
                 <div class="button-nav-website"> wydarzenia</div>
                 <div class="button-nav-website">gadżety</div>
                 <div class="button-nav-website">kontakt</div>
