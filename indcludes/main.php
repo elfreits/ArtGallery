@@ -2,23 +2,23 @@
 <div id="images-website">
     <h2 class="h2-text-website">Witaj na Mery Art Gallery.  Znajdź tutaj dla siebie coś wyjątkowego! Mamy tu niesamowite kolekcje w przystępnej cenie.</h2>
     <div class="image-box-website">
-        <img src="images/IMG_0292.JPG" class="image-website">
+        <img src="img/IMG_0292.JPG" class="image-website">
         <h3 class="h3-text-website">Koleś przy lapku</h3>
     </div>
     <div class="image-box-website">
-        <img src="images/IMG_0304.JPEG" class="image-website">
+        <img src="img/IMG_0304.JPEG" class="image-website">
         <h3 class="h3-text-website">książki otwarte</h3>
     </div>
     <div class="image-box-website">
-        <img src="images/IMG_0305.JPEG" class="image-website">
+        <img src="img/IMG_0305.JPEG" class="image-website">
         <h3 class="h3-text-website">kawa na stole</h3>
     </div>
     <div class="image-box-website">
-        <img src="images/IMG_0306.JPEG" class="image-website">
+        <img src="img/IMG_0306.JPEG" class="image-website">
         <h3 class="h3-text-website">Tajemniczt nos</h3>
     </div>
     <div class="image-box-website">
-        <img src="images/IMG_0307.JPEG" class="image-website">
+        <img src="img/IMG_0307.JPEG" class="image-website">
         <h3 class="h3-text-website">Ptak o poranku</h3>
     </div>
     <div class="image-box-website">

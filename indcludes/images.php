@@ -20,7 +20,7 @@
                     $sizeUnit = $row['sizeUnit'];
                     $image = $row['image'];
                     echo '<div class="item-box-shop">';
-                    echo '<img src="images/'.$image.'" class="item-image-shop">';
+                    echo '<img src="img/'.$image.'" class="item-image-shop">';
                     echo '<h2>'.$name.'</h2>';
                     echo '<h3>'.$author.'</h3>';
                     echo '<h4>'. $sizeX.' '.$sizeUnit.' x '.$sizeY.' '.$sizeUnit.'</h4>';
