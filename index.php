@@ -11,7 +11,7 @@
 </head>
     <body>
     <?php
-        include 'indcludes/footer.php';
+        include 'indcludes/header.php';
         include 'indcludes/pages.php';
         include 'indcludes/footer.php';
     ?>
