@@ -7,9 +7,9 @@
 <div class="container">
     <div class="row no-gutters">
         <?php
-            $conn = mysqli_connect('localhost', 'root', '');
+            $conn = mysqli_connect($host, $userDB, $passwordDB);
             $conn->query("SET NAMES 'utf8'");
-            mysqli_select_db($conn,'gallery');
+            mysqli_select_db($conn, $base);
             $query = mysqli_query($conn, "SELECT id, author, name, price, sizeX, sizeY, sizeUnit, image FROM items WHERE type = 1");
                 while($row = mysqli_fetch_array($query)){
                     $id = $row['id'];
