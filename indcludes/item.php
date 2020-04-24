@@ -1,9 +1,5 @@
 <?php
-    require_once("confDB.php");
     $id = $_GET['id'];
-    $conn = mysqli_connect($host, $userDB, $passwordDB);
-    $conn->query("SET NAMES 'utf8'");
-    mysqli_select_db($conn, $base);
     $query = mysqli_query($conn, "SELECT id, author, name, price, sizeX, sizeY, sizeUnit, image FROM items WHERE id = $id");
     while($row=mysqli_fetch_array($query)){
         $name = $row['name'];

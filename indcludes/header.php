@@ -39,6 +39,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="?page=art">obrazy</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="?page=login">logowanie</a>
+            </li>
             <!--
             <li class="nav-item">
                 <a class="nav-link" href="#">wydarzenia</a>
@@ -48,9 +51,6 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">kontakt</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">logowanie</a>
             </li>
             -->
         </ul>

@@ -1,3 +1,10 @@
+<?php
+    require_once("indcludes/confDB.php");
+    session_start();
+    $conn = mysqli_connect($host, $userDB, $passwordDB);
+    $conn->query("SET NAMES 'utf8'");
+    mysqli_select_db($conn, $base);
+?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -9,6 +16,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/shop.css">
     <link rel="stylesheet" href="styles/item.css">
+    <link rel="stylesheet" href="styles/login.css">
     <script src="http://localhost/ArtGallery/js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,6 +29,7 @@
         include 'indcludes/header.php';
         include 'indcludes/pages.php';
         include 'indcludes/footer.php';
+        mysqli_close($conn);
     ?>
     </body>
 </html>

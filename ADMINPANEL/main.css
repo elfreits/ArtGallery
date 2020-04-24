@@ -1,0 +1,41 @@
+.admin-panel-header{
+    width: 100%;
+    color: white;
+    background-color: #292E31   ;
+    padding: 10px 0px 5px 0px;
+    font-family: 'Roboto', arial;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.admin-panel-header i{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    font-size: 28px;
+}
+.nav-pills{
+    box-shadow: 1px 0px 5px -4px black;
+    height: calc(100vh - 60px);
+    background-color: #363a41;
+}
+.nav-pills .active{
+    background-color: #282B2F !important;
+    color: #FFF !important;
+    border-radius: 0px !important;
+}
+.nav-link{
+    color: #FFF;
+}
+.nav-link:hover{
+    color: #969696;
+}
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+a:hover{
+    color: #969696;
+    text-decoration: none;
+}

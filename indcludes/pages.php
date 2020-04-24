@@ -9,6 +9,9 @@
         else if($_GET['page']=="item") {
             include 'item.php';
         }
+        else if($_GET['page']=="login") {
+            include 'login.php';
+        }
         else{
             include('main.php');
         }
