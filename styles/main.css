@@ -12,6 +12,22 @@ a{
 .wrapper{
     padding: 40px 0px;
 }
+@media (max-width: 575.98px) {
+    .wrapper{
+        padding: 20px 0px;
+    }
+    #add-button-item{
+        margin: auto;
+    }
+    #footer{
+        text-align: center;
+    }
+    .footer-header-website{
+        border-top: 1px dashed grey;
+    }
+
+
+}
 .navbar-toggler{
     background-size: #FFF !important;
 }

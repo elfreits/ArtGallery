@@ -1,25 +1,4 @@
-.content-item{
-    width: 1000px;
-    min-height: 80vh;
-    margin: auto;
-    margin-top: 20px;
-}
-.image-item{
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-    float: left;
-    background-color: #F9F9F9;
-}
-.image-item:hover{
-    object-fit: scale-down;
-}
-#info-box-item{
-    float:left;
-    width: 450px;
-    height: 300px;
-    padding: 10px 50px;
-}
+
 #add-button-item{
     padding: 20px;
     background-color: black;
@@ -27,12 +6,36 @@
     width: 250px;
     text-align: center;
 }
-.squere{
-    width: 40px;
-    height: 40px;
-    background-color: red;
-    margin: 20px;
+.aspect-ratio-box {
+    position: relative;
+    margin-bottom: 20px;
 }
+
+/* Create a pseudo element that uses padding-bottom to take up space */
+.aspect-ratio-box::after {
+    display: block;
+    content: '';
+    /* 16:9 aspect ratio */
+    padding-bottom: 100%;
+}
+
+/* Image is positioned absolutely relative to the parent element */
+.aspect-ratio-box img {
+    /* Image should match parent box size */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.aspect-ratio-box img:hover{
+    object-fit: scale-down;
+    background-color: #c5cbc5;
+
+}
+
 
 
 

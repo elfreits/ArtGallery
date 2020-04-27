@@ -11,17 +11,22 @@
         $sizeUnit = $row['sizeUnit'];
     }
 ?>
-<div class = "content-item">
-    <?php
-        echo '<img src="img/'.$image.'" class="image-item">';
-    ?>
-    <div id="info-box-item">
-        <h1><?php echo $name; ?></h1>
-        <h2><?php echo $author; ?></h2>
-        <h3><?php echo $sizeX." x ".$sizeY.' ('.$sizeUnit.')'; ?></h3>
-        <h2><?php echo $price."PLN"; ?></h2>
-        <div id="add-button-item">Dodaj do koszyka </div>
-    </div>
-    <div style="clear:both"></div>
+<div class="wrapper">
+    <div class = "container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="aspect-ratio-box">
+                    <?php echo '<img src="img/'.$image.'" class="image-item">';?>
+                </div>
 
+            </div>
+            <div class="col-md-7">
+                <h1><?php echo $name; ?></h1>
+                <h2><?php echo $author; ?></h2>
+                <h3><?php echo $sizeX." x ".$sizeY.' ('.$sizeUnit.')'; ?></h3>
+                <h2><?php echo $price."PLN"; ?></h2>
+                <div id="add-button-item">Dodaj do koszyka </div>
+            </div>
+        </div>
+    </div>
 </div>
