@@ -27,7 +27,7 @@
                     $_SESSION['logged'] = true;
                     $_SESSION['login'] = $login;
                     $_SESSION['accountType'] = $accountType;
-                    header("Location: ./ADMINPANEL/index.php");
+                    header("Location: /");
                 }
                 else{
                     $_SESSION['loginError'] = "niepoprawne hasło";

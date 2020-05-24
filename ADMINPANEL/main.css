@@ -8,12 +8,15 @@
     text-transform: uppercase;
 }
 
-.admin-panel-header i{
+.admin-panel-header a{
     display: block;
     position: absolute;
     right: 15px;
-    top: 17px;
+    top: 12px;
     font-size: 28px;
+}
+.admin-panel-header a:nth-child(2) {
+    right: 55px;
 }
 .full-screen{
     margin: 0px;

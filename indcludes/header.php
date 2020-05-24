@@ -20,6 +20,7 @@
 </div>
 -->
 <!-- NEW NAVBAR -->
+
 <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark" id="navbar">
     <a class="navbar-brand" href="#">
         <div class="logo-textbox-website">
@@ -33,15 +34,36 @@
 
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto">
+            <?php
+            if(isSet($_SESSION['logged']) && $_SESSION['logged'] == true && isSet($_SESSION['accountType']) && $_SESSION['accountType'] == 'admin') {
+                echo ' 
+                 <li class="nav-item">
+                    <a class="nav-link adminPanelButton" href="/ADMINPANEL">ADMINPANEL</a>
+                </li>';
+            }
+            ?>
+
             <li class="nav-item">
                 <a class="nav-link" href="?page=main">główna</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="?page=art">obrazy</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="?page=login">logowanie</a>
-            </li>
+            <?php
+                if(isSet($_SESSION['logged']) && $_SESSION['logged'] == true){
+                    echo '
+                    <li class="nav-item">
+                        <a class="nav-link" href="/source.php?action=logout">wyloguj</a>
+                    </li>';
+                }
+                else{
+                    echo'
+                    <li class="nav-item">
+                        <a class="nav-link" href="?page=login">logowanie</a>
+                     </li>';
+                }
+            ?>
+
             <!--
             <li class="nav-item">
                 <a class="nav-link" href="#">wydarzenia</a>
